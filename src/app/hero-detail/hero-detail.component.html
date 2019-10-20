@@ -1,0 +1,9 @@
+<div *ngIf="selectedHero">
+    Selected Hero:
+    <p><span>{{selectedHero.id}} </span><span>{{selectedHero.name}}</span></p>
+    <input type="text" [(ngModel)]="selectedHero.name">
+   <button (click)="goBack()">Go Back</button> 
+   <button (click)="save()">Save</button>
+
+   
+</div>
